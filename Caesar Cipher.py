@@ -1,4 +1,4 @@
-#A python program to illustrate Caesar Cipher Technique
+# Caesar Cipher
 def encrypt(text,s):
 	result = ""
 
@@ -6,11 +6,11 @@ def encrypt(text,s):
 	for i in range(len(text)):
 		char = text[i]
 
-		# Encrypt uppercase characters
+		# Encrypt the uppercase characters
 		if (char.isupper()):
 			result += chr((ord(char) + s-65) % 26 + 65)
 
-		# Encrypt lowercase characters
+		# Encrypt the lowercase characters
 		else:
 			result += chr((ord(char) + s - 97) % 26 + 97)
 
