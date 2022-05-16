@@ -1,6 +1,6 @@
 from PIL import Image
 
-img=Image.open(r"r_test.jpg")
+img=Image.open(r"rplace.jpg")
 img =img.convert('RGB')
 px=img.load()
 
@@ -19,7 +19,7 @@ print("##################")
 if px[x, y] == (r,g,b):
     px[x, y] = (104, 105, 105)
 
-img.save("f_test.jpg")
+img.save("f_rplace.jpg")
 print(px[x,y])
 print("Pixel at",x,"",y," - Red: {}, Green: {}, Blue: {}".format(r,g,b))
 
