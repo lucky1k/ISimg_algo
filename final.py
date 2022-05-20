@@ -27,3 +27,8 @@ print("Pixel at",x,"",y," - Red: {}, Green: {}, Blue: {}".format(r,g,b))
 
 
 img.show()
+
+key = x,y
+
+
+print(hash(key))
