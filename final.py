@@ -1,6 +1,6 @@
 from PIL import Image
 
-img=Image.open(r"rplace.jpg")
+img=Image.open(r"rplace.png")
 img =img.convert('RGB')
 px=img.load()
 
